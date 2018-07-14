@@ -18,6 +18,9 @@ Plugin 'jistr/vim-nerdtree-tabs'
 call vundle#end()
 filetype plugin indent on
 
+" Add Line Numbers
+set nu
+
 " Vim Split Configuration Block
 set splitbelow
 set splitright
