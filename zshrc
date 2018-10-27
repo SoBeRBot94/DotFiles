@@ -1,0 +1,1 @@
+/home/SoBeRBot94/.zshrc
