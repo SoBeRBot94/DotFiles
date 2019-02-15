@@ -14,6 +14,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'lervag/vimtex'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -66,6 +67,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 "" Remap NerdTree Keys
 map <C-n> :NERDTreeToggle<CR>
+
+"" NerdTree Pane Size
+let g:NERDTreeWinSize=50
 
 "" Init CtrlP
 set runtimepath^=~/.config/nvim/bundle/ctrlp.vim
