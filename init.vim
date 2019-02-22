@@ -21,6 +21,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'brooth/far.vim'
+Plugin 'hashivim/vim-terraform'
+Plugin 'hashivim/vim-vagrant'
 
 call vundle#end()
 filetype plugin indent on
@@ -81,3 +83,9 @@ let g:ctrlp_cmd = 'CtrlP'
 "" CtrlP Directories & Files Configuration
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+"" Vim-Terraform Configuration Block
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+let g:terraform_remap_spacebar=1
+let g:terraform_fmt_on_save=1
