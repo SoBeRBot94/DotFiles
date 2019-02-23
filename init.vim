@@ -24,6 +24,7 @@ Plugin 'brooth/far.vim'
 Plugin 'hashivim/vim-terraform'
 Plugin 'hashivim/vim-vagrant'
 Plugin 'pearofducks/ansible-vim'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
@@ -90,3 +91,7 @@ let g:terraform_align=1
 let g:terraform_fold_sections=1
 let g:terraform_remap_spacebar=1
 let g:terraform_fmt_on_save=1
+
+"" vim-Airline Configuration Block
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
