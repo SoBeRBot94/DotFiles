@@ -23,6 +23,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'brooth/far.vim'
 Plugin 'hashivim/vim-terraform'
 Plugin 'hashivim/vim-vagrant'
+Plugin 'pearofducks/ansible-vim'
 
 call vundle#end()
 filetype plugin indent on
