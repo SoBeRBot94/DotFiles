@@ -86,6 +86,9 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
+"" CtrlP Remove Cache
+:nnoremap <c-p> :CtrlPClearCache<bar>CtrlP<cr>
+
 "" Vim-Terraform Configuration Block
 let g:terraform_align=1
 let g:terraform_fold_sections=1
@@ -95,3 +98,7 @@ let g:terraform_fmt_on_save=1
 "" vim-Airline Configuration Block
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
+
+"" vim-Ansible Configuration Block
+let g:ansible_attribute_highlight = "ob"
+let g:ansible_name_highlight = 'd'
