@@ -77,7 +77,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 map <C-n> :NERDTreeToggle<CR>
 
 "" NerdTree Pane Size
-let g:NERDTreeWinSize=50
+let g:NERDTreeWinSize=65
 
 "" Init CtrlP
 set runtimepath^=~/.config/nvim/bundle/ctrlp.vim
