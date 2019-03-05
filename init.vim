@@ -25,9 +25,13 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'hashivim/vim-vagrant'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'connorholyday/vim-snazzy'
 
 call vundle#end()
 filetype plugin indent on
+
+"" ColorScheme
+colorscheme snazzy
 
 " Add Line Numbers
 set nu
