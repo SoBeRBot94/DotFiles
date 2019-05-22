@@ -1,12 +1,12 @@
 export TERM="xterm-256color"
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/SoBeRBot94/.oh-my-zsh
+export ZSH=~$USER/.oh-my-zsh
 
 # ==================================================
 
 # oh-my-zsh Theme
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ==================================================
 
@@ -36,7 +36,6 @@ plugins=(
 
 # Sources
 source $ZSH/oh-my-zsh.sh
-source "/home/SoBeRBot94/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 #source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ==================================================
