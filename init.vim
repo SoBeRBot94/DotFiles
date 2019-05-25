@@ -25,13 +25,26 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'hashivim/vim-vagrant'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'connorholyday/vim-snazzy'
+Plugin 'reedes/vim-colors-pencil'
 
 call vundle#end()
 filetype plugin indent on
 
 "" ColorScheme
-colorscheme snazzy
+colorscheme pencil
+set background=dark
+
+"" Pencil Specific Configuration
+let g:airline_theme = 'pencil'
+
+let g:pencil_spell_undercurl = 1
+let g:pencil_terminal_italics = 1
+
+let g:pencil_gutter_color = 1
+
+"" Pencil Markdown Config
+let g:pencil_neutral_headings = 1
+let g:pencil_neutral_code_bg = 1 
 
 " Add Line Numbers
 set nu
