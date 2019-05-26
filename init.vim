@@ -26,6 +26,9 @@ Plugin 'hashivim/vim-vagrant'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'reedes/vim-colors-pencil'
+Plugin 'junegunn/goyo.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()
 filetype plugin indent on
@@ -119,3 +122,8 @@ let g:airline#extensions#tabline#enabled=1
 "" vim-Ansible Configuration Block
 let g:ansible_attribute_highlight = "ob"
 let g:ansible_name_highlight = 'd'
+
+"" Vim-Markdown Configuration Block
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_emphasis_multiline = 0
+let g:vim_markdown_conceal = 0
