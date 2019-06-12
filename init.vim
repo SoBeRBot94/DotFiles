@@ -29,6 +29,7 @@ Plugin 'reedes/vim-colors-pencil'
 Plugin 'junegunn/goyo.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'MicahElliott/Rocannon'
 
 call vundle#end()
 filetype plugin indent on
