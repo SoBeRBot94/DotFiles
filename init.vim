@@ -31,6 +31,19 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'MicahElliott/Rocannon'
 
+if has('nvim')
+	Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+	Plugin 'Shougo/deoplete.nvim'
+	Plugin 'roxma/nvim-yarp'
+	Plugin 'roxma/vim-hug-neovim-rpc'
+endif
+
+"" Deoplete Plugins
+Plugin 'deoplete-plugins/deoplete-docker' "Docker
+Plugin 'deoplete-plugins/deoplete-go' "Golang
+Plugin 'deoplete-plugins/deoplete-jedi' "Python
+
 call vundle#end()
 filetype plugin indent on
 
@@ -128,3 +141,7 @@ let g:ansible_name_highlight = 'd'
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_emphasis_multiline = 0
 let g:vim_markdown_conceal = 0
+
+"" Vim-Deoplete Configuration Block
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_ignore_case = 1
