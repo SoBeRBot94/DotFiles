@@ -68,3 +68,5 @@ alias docker_clean_images="docker rmi --force $(docker images -a | awk '{print $
 
 ## --- Exports ---
 export PAGER="most"
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
