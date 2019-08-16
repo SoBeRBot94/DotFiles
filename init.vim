@@ -25,7 +25,8 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'hashivim/vim-vagrant'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'reedes/vim-colors-pencil'
+Plugin 'sainnhe/gruvbox-material'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'junegunn/goyo.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -48,20 +49,12 @@ call vundle#end()
 filetype plugin indent on
 
 "" ColorScheme
-colorscheme pencil
-set background=dark
+colorscheme gruvbox-material-hard
 
-"" Pencil Specific Configuration
-let g:airline_theme = 'pencil'
-
-let g:pencil_spell_undercurl = 1
-let g:pencil_terminal_italics = 1
-
-let g:pencil_gutter_color = 1
-
-"" Pencil Markdown Config
-let g:pencil_neutral_headings = 1
-let g:pencil_neutral_code_bg = 1 
+"" Gruvbox Specific Configuration
+let g:airline_theme = 'gruvbox_material'
+let g:gruvbox_material_kill_italic=1
+let g:gruvbox_material_enable_bold=1
 
 " Add Line Numbers
 set nu
@@ -107,7 +100,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 map <C-n> :NERDTreeToggle<CR>
 
 "" NerdTree Pane Size
-let g:NERDTreeWinSize=65
+let g:NERDTreeWinSize=50
 
 "" Init CtrlP
 set runtimepath^=~/.config/nvim/bundle/ctrlp.vim
