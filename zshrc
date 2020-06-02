@@ -29,7 +29,28 @@ COMPLETION_WAITING_DOTS="true"
 
 # Plugins
 plugins=(
-  git
+	ansible
+	copyfile
+	docker
+	extract
+	fabric
+	dnf
+	git
+	github
+	httpie
+	jsontools
+	kubectl
+	pep8
+	pip
+	pylint
+	python
+	ruby
+	screen
+	sudo
+	supervisor
+	systemd
+	vagrant
+	wd
 )
 
 # ==================================================
@@ -41,6 +62,7 @@ source $ZSH/oh-my-zsh.sh
 # ==================================================
 
 # User specific aliases and functions
+
 alias zshrc="vim ~/.zshrc"
 
 ### --- Bleachbit ---
@@ -70,3 +92,14 @@ alias docker_clean_images="docker rmi --force $(docker images -a | awk '{print $
 export PAGER="most"
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
+# BEGIN ANSIBLE MANAGED BLOCK
+# vagrant plguins related configuration
+export VAGRANT_DISABLE_STRICT_DEPENDENCY_ENFORCEMENT=1
+export VAGRANT_EXPERIMENTAL=1
+# END ANSIBLE MANAGED BLOCK
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi
